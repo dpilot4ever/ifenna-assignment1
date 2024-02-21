@@ -1,0 +1,90 @@
+/* utility class */
+.animate{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+/* .animate.animate--infinite{
+    animation-iteration-count: ;
+} */
+.parent{
+    width: 300px;
+    height: 500px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.child{
+    width: 60%;
+    height: 50%;
+    background-color: pink;
+    
+}
+button{
+    background-color: red;
+    width: 100px;
+    height: 80px;
+    color: white;
+    font-size: 24px;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s linear;
+    /* transition: width 2s ease, color 2s ease-in, height 2s ease; */
+    /* transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: ease; */
+}
+
+button:hover{
+    background-color: white;
+    color: red;
+    width: 120px;
+    height: 70px;
+    /* transition: width 2s; */
+    
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: red;
+    margin: 50px;
+    margin-top: 150px;
+    animation-name: bounce;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce{
+    0%,
+    20%,
+    50%,
+   80%,
+    100%{
+        transform: translateY(0);
+    }
+    20%{
+        transform: translateY(-60px);
+    }
+    50%{
+        transform: translateY(-45px);
+    }
+    80%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+.bounce{
+    animation-name: bounce;
+}
